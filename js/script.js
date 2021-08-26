@@ -39,3 +39,24 @@ menuBtn2.addEventListener("click", toggleMenu2);
 /*
   End - This is for menu button 2 functionality
 */
+
+/*
+  Start - This is for menu button 3 functionality
+*/
+
+// Select Target Element
+const menuBtn3 = document.querySelector(".menu__btn__3");
+
+
+// Callback Function toggleMenu2
+const toggleMenu3 = () => {
+    menuBtn3.classList.toggle("open");
+}
+
+// Add Event Listener For Menu Button 2
+menuBtn3.addEventListener("click", toggleMenu3);
+
+
+/*
+  End - This is for menu button 3 functionality
+*/
