@@ -1,12 +1,99 @@
 /* Reset */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
 /* Base Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {
-  font-size: 18px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    --color-lavender: lavender;
 }
+
+
+/* * {
+  border: 1px solid orange;
+} */
+
+body {
+    background-color: var(--color-lavender);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    margin: 3rem 0;
+}
+
+.hamburger__wrapper {
+    border: 1px solid orange;
+}
+
+
+/* Syle Menu-1 */
+
+.hamburger__wrapper .menu__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 1rem 0;
+}
+
+
+/* Menu Button 1 */
+
+.hamburger__wrapper .menu__1 .menu__btn__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hamburger__wrapper .menu__1 .menu__btn__1 span {
+    background-color: black;
+    width: 2rem;
+    height: 1px;
+}
+
+.hamburger__wrapper .menu__1 .menu__btn__1::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 2rem;
+    height: 1px;
+    transform: translateY(-10px);
+}
+
+.hamburger__wrapper .menu__1 .menu__btn__1::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 2rem;
+    height: 1px;
+    transform: translateY(10px);
+}
+
+
+/* Menu Button 1 */
+
+
+/* End Syle Menu-1 */
