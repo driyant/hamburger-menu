@@ -249,6 +249,9 @@ h1 {
 }
 
 
+/* End Menu Button 3 */
+
+
 /* Animation For Menu Button 3 */
 
 .hamburger__wrapper .menu__3 .menu__btn__3.open .line__2 {
@@ -270,7 +273,77 @@ h1 {
 /* Animation For Menu Button 3 */
 
 
+/* ===================== End Syle Menu-3 ===================== */
+
+
+/* ===================== Syle Menu-4 ===================== */
+
+.hamburger__wrapper .menu__4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 1rem 0;
+}
+
+
+/* Menu Button 1 */
+
+.hamburger__wrapper .menu__4 .menu__btn__4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.hamburger__wrapper .menu__4 .menu__btn__4 .line__1,
+.hamburger__wrapper .menu__4 .menu__btn__4 .line__2,
+.hamburger__wrapper .menu__4 .menu__btn__4 .line__3 {
+    background-color: black;
+    width: 1.5rem;
+    height: 1px;
+    transition: 1s ease;
+}
+
+.hamburger__wrapper .menu__4 .menu__btn__4 .line__1 {
+    margin-top: 18px;
+}
+
+.hamburger__wrapper .menu__4 .menu__btn__4 .line__2 {
+    margin: 6px 0;
+}
+
+
 /* End Menu Button 3 */
+
+
+/* Animation For Menu Button 4 */
+
+.hamburger__wrapper .menu__4 .menu__btn__4.open {
+    border-radius: 50%;
+}
+
+.hamburger__wrapper .menu__4 .menu__btn__4.open .line__1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger__wrapper .menu__4 .menu__btn__4.open .line__3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger__wrapper .menu__4 .menu__btn__4.open .line__2 {
+    transform: translateX(-41px);
+    background: transparent;
+}
+
+
+/* Animation For Menu Button 4 */
 
 
 /* ===================== End Syle Menu-3 ===================== */
