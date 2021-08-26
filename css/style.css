@@ -43,7 +43,7 @@ h1 {
 }
 
 
-/* Syle Menu-1 */
+/* ===================== Syle Menu-1 ===================== */
 
 .hamburger__wrapper .menu__1 {
     display: flex;
@@ -97,6 +97,9 @@ h1 {
 }
 
 
+/* End Menu Button 1 */
+
+
 /* Animation For Menu Button 1 */
 
 .hamburger__wrapper .menu__1 .menu__btn__1.open span {
@@ -115,7 +118,4 @@ h1 {
 /* End Animation For Menu Button 1 */
 
 
-/* End Menu Button 1 */
-
-
-/* End Syle Menu-1 */
+/* ===================== End Syle Menu-1 ===================== */
