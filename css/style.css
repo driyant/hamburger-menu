@@ -346,7 +346,60 @@ h1 {
 /* Animation For Menu Button 4 */
 
 
-/* ===================== End Syle Menu-3 ===================== */
+/* ===================== End Syle Menu-4 ===================== */
+
+
+/* ===================== Syle Menu-5 ===================== */
+
+.hamburger__wrapper .menu__5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 1rem 0;
+}
+
+
+/* Menu Button 1 */
+
+.hamburger__wrapper .menu__5 .menu__btn__5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.hamburger__wrapper .menu__5 .menu__btn__5 .line__1,
+.hamburger__wrapper .menu__5 .menu__btn__5 .line__2,
+.hamburger__wrapper .menu__5 .menu__btn__5 .line__3 {
+    background-color: black;
+    width: 1.5rem;
+    height: 1px;
+    transition: 1s ease;
+}
+
+.hamburger__wrapper .menu__5 .menu__btn__5 .line__1 {
+    margin-top: 18px;
+}
+
+.hamburger__wrapper .menu__5 .menu__btn__5 .line__2 {
+    margin: 6px 0;
+}
+
+
+/* End Menu Button 3 */
+
+
+/* Animation For Menu Button 4 */
+
+
+/* Animation For Menu Button 4 */
 
 
 /* ===================== For Tablet Screen ===================== */
