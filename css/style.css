@@ -10,9 +10,11 @@
 /* Base Style */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    --font-family--Montserrat: 'Montserrat', sans-serif;
+    --font-family--Poppins: "Poppins", sans-serif;
     --color-lavender: lavender;
 }
 
@@ -23,6 +25,7 @@
 
 body {
     background-color: var(--color-lavender);
+    font-family: var(--font-family--Poppins);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +64,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 50px;
     width: 50px;
     margin-top: 1rem;
@@ -70,7 +73,7 @@ h1 {
 
 .hamburger__wrapper .menu__1 .menu__btn__1 span {
     background-color: black;
-    width: 2rem;
+    width: 1.5rem;
     height: 1px;
     opacity: 1;
     transition: all 1s ease-in-out;
@@ -80,9 +83,9 @@ h1 {
     content: "";
     position: absolute;
     background-color: black;
-    width: 2rem;
+    width: 1.5rem;
     height: 1px;
-    transform: translateY(-10px);
+    transform: translateY(-7px);
     transition: all 1s ease-in-out;
 }
 
@@ -90,9 +93,9 @@ h1 {
     content: "";
     position: absolute;
     background-color: black;
-    width: 2rem;
+    width: 1.5rem;
     height: 1px;
-    transform: translateY(10px);
+    transform: translateY(7px);
     transition: all 1s ease-in-out;
 }
 
@@ -119,3 +122,81 @@ h1 {
 
 
 /* ===================== End Syle Menu-1 ===================== */
+
+
+/* ===================== Syle Menu-2 ===================== */
+
+.hamburger__wrapper .menu__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 1rem 0;
+}
+
+
+/* Menu Button 1 */
+
+.hamburger__wrapper .menu__2 .menu__btn__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hamburger__wrapper .menu__2 .menu__btn__2 span {
+    background-color: black;
+    width: 1.5rem;
+    height: 1px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.hamburger__wrapper .menu__2 .menu__btn__2::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 1.5rem;
+    height: 1px;
+    transform: translateY(-7px);
+    transition: all 1s ease-in-out;
+}
+
+.hamburger__wrapper .menu__2 .menu__btn__2::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 1.5rem;
+    height: 1px;
+    transform: translateY(7px);
+    transition: all 1s ease-in-out;
+}
+
+
+/* End Menu Button 1 */
+
+
+/* Animation For Menu Button 1 */
+
+.hamburger__wrapper .menu__2 .menu__btn__2.open span {
+    transform: translateX(-41px) scaleX(0);
+}
+
+.hamburger__wrapper .menu__2 .menu__btn__2.open::before {
+    transform: rotate(45deg);
+}
+
+.hamburger__wrapper .menu__2 .menu__btn__2.open::after {
+    transform: rotate(-45deg);
+}
+
+
+/* End Animation For Menu Button 1 */
+
+
+/* ===================== End Syle Menu-2 ===================== */
