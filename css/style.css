@@ -357,3 +357,10 @@ h1 {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media screen and (min-width:1024px) {
+    .hamburger__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
