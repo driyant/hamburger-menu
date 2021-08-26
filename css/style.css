@@ -232,6 +232,7 @@ h1 {
     background-color: black;
     width: 1.5rem;
     height: 1px;
+    transition: 1s ease;
 }
 
 .hamburger__wrapper .menu__3 .menu__btn__3 .line__1 {
@@ -240,11 +241,33 @@ h1 {
     height: 1px;
     margin-left: -11px;
     margin-top: 0.5rem;
+    transition: 1s ease;
 }
 
 .hamburger__wrapper .menu__3 .menu__btn__3 .line__3 {
     margin-bottom: 0.5rem;
 }
+
+
+/* Animation For Menu Button 3 */
+
+.hamburger__wrapper .menu__3 .menu__btn__3.open .line__2 {
+    transform: scaleX(0);
+    transition: 1s ease;
+}
+
+.hamburger__wrapper .menu__3 .menu__btn__3.open .line__1 {
+    transform: rotate(-45deg) translate(0, 3px);
+    width: 1.5rem;
+}
+
+.hamburger__wrapper .menu__3 .menu__btn__3.open .line__3 {
+    transform: rotate(-45deg) translate(0, -1px);
+    width: 1.5rem;
+}
+
+
+/* Animation For Menu Button 3 */
 
 
 /* End Menu Button 3 */
