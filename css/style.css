@@ -66,6 +66,11 @@ img {
     transition: all 0.4s ease-in;
 }
 
+.work__example {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* End Base Style */
 
