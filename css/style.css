@@ -420,6 +420,68 @@ h1 {
 /* ===================== End Syle Menu-5 ===================== */
 
 
+/* ===================== Syle Menu-6 ===================== */
+
+.hamburger__wrapper .menu__6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 1rem 0;
+}
+
+
+/* Menu Button 6 */
+
+.hamburger__wrapper .menu__6 .menu__btn__6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    position: relative;
+}
+
+.hamburger__wrapper .menu__6 .menu__btn__6 input {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger__wrapper .menu__6 .menu__btn__6 span {
+    display: block;
+    background-color: black;
+    height: 1px;
+    width: 1.5rem;
+    margin: 3px 0;
+    transition: 1s ease-in;
+}
+
+
+/* End Menu Button 6 */
+
+
+/* Animation For Menu Button 6 */
+
+
+/* .hamburger__wrapper .menu__6 .menu__btn__6 input:checked~span:nth-child(3) {
+    transform: translateX(41px) scaleX(0);
+} */
+
+
+/* End Animation For Menu Button 6 */
+
+
+/* ===================== End Syle Menu-6 ===================== */
+
+
 /* ===================== For Tablet Screen ===================== */
 
 @media screen and (min-width:768px) {
