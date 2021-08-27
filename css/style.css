@@ -38,12 +38,29 @@ body {
 }
 
 h1 {
-    margin: 3rem 0;
+    margin-top: 2rem;
 }
 
 .hamburger__wrapper {
     border: 1px solid orange;
     border-radius: 15px;
+    margin: 1rem;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.container .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }
 
 
@@ -143,7 +160,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 50px;
     width: 50px;
     margin-top: 1rem;
@@ -153,7 +170,7 @@ h1 {
 .hamburger__wrapper .menu__2 .menu__btn__2 span {
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
@@ -163,7 +180,7 @@ h1 {
     position: absolute;
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transform: translateY(-7px);
     transition: all 1s ease-in-out;
 }
@@ -173,7 +190,7 @@ h1 {
     position: absolute;
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transform: translateY(7px);
     transition: all 1s ease-in-out;
 }
@@ -221,7 +238,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     flex-flow: column wrap;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 50px;
     width: 50px;
     margin-top: 1rem;
@@ -232,14 +249,14 @@ h1 {
 .hamburger__wrapper .menu__3 .menu__btn__3 .line__3 {
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transition: 1s ease;
 }
 
 .hamburger__wrapper .menu__3 .menu__btn__3 .line__1 {
     background-color: black;
     width: 0.875rem;
-    height: 1px;
+    height: 3px;
     margin-left: -11px;
     margin-top: 0.5rem;
     transition: 1s ease;
@@ -295,7 +312,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     flex-flow: column wrap;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 50px;
     width: 50px;
     margin-top: 1rem;
@@ -308,12 +325,12 @@ h1 {
 .hamburger__wrapper .menu__4 .menu__btn__4 .line__3 {
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transition: 1s ease;
 }
 
 .hamburger__wrapper .menu__4 .menu__btn__4 .line__1 {
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 .hamburger__wrapper .menu__4 .menu__btn__4 .line__2 {
@@ -331,11 +348,11 @@ h1 {
 }
 
 .hamburger__wrapper .menu__4 .menu__btn__4.open .line__1 {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(6px, 7px);
 }
 
 .hamburger__wrapper .menu__4 .menu__btn__4.open .line__3 {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .hamburger__wrapper .menu__4 .menu__btn__4.open .line__2 {
@@ -368,7 +385,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     flex-flow: column wrap;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 50px;
     width: 50px;
     margin-top: 1rem;
@@ -381,12 +398,13 @@ h1 {
 .hamburger__wrapper .menu__5 .menu__btn__5 .line__3 {
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transition: 1s ease;
+    border-radius: 15px;
 }
 
 .hamburger__wrapper .menu__5 .menu__btn__5 .line__1 {
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 .hamburger__wrapper .menu__5 .menu__btn__5 .line__2 {
@@ -400,16 +418,16 @@ h1 {
 /* Animation For Menu Button 5 */
 
 .hamburger__wrapper .menu__5 .menu__btn__5.open .line__1 {
-    transform: rotate(45deg) translate(6px, 14px);
+    transform: rotate(45deg) translate(7px, 15px);
     width: 1rem;
 }
 
 .hamburger__wrapper .menu__5 .menu__btn__5.open .line__2 {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(-1px);
 }
 
 .hamburger__wrapper .menu__5 .menu__btn__5.open .line__3 {
-    transform: rotate(-45deg) translate(5px, 5px);
+    transform: rotate(-45deg) translate(5px, 3px);
     width: 1rem;
 }
 
@@ -494,13 +512,23 @@ h1 {
 /* ===================== For Tablet Screen ===================== */
 
 @media screen and (min-width:768px) {
+    .container .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    img {
+        margin-left: 1rem;
+    }
     .hamburger__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 1rem;
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1280px) {
     .hamburger__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
