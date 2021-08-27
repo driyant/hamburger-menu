@@ -43,6 +43,7 @@ h1 {
 
 .hamburger__wrapper {
     border: 1px solid orange;
+    border-radius: 15px;
 }
 
 
@@ -178,10 +179,10 @@ h1 {
 }
 
 
-/* End Menu Button 1 */
+/* End Menu Button 2 */
 
 
-/* Animation For Menu Button 1 */
+/* Animation For Menu Button 2 */
 
 .hamburger__wrapper .menu__2 .menu__btn__2.open span {
     transform: translateX(-41px) scaleX(0);
@@ -196,7 +197,7 @@ h1 {
 }
 
 
-/* End Animation For Menu Button 1 */
+/* End Animation For Menu Button 2 */
 
 
 /* ===================== End Syle Menu-2 ===================== */
@@ -287,7 +288,7 @@ h1 {
 }
 
 
-/* Menu Button 1 */
+/* Menu Button 4 */
 
 .hamburger__wrapper .menu__4 .menu__btn__4 {
     display: flex;
@@ -320,7 +321,7 @@ h1 {
 }
 
 
-/* End Menu Button 3 */
+/* End Menu Button 4 */
 
 
 /* Animation For Menu Button 4 */
@@ -360,7 +361,7 @@ h1 {
 }
 
 
-/* Menu Button 1 */
+/* Menu Button 5 */
 
 .hamburger__wrapper .menu__5 .menu__btn__5 {
     display: flex;
@@ -393,13 +394,30 @@ h1 {
 }
 
 
-/* End Menu Button 3 */
+/* End Menu Button 5 */
 
 
-/* Animation For Menu Button 4 */
+/* Animation For Menu Button 5 */
+
+.hamburger__wrapper .menu__5 .menu__btn__5.open .line__1 {
+    transform: rotate(45deg) translate(6px, 14px);
+    width: 1rem;
+}
+
+.hamburger__wrapper .menu__5 .menu__btn__5.open .line__2 {
+    transform: rotate(90deg);
+}
+
+.hamburger__wrapper .menu__5 .menu__btn__5.open .line__3 {
+    transform: rotate(-45deg) translate(5px, 5px);
+    width: 1rem;
+}
 
 
-/* Animation For Menu Button 4 */
+/* Animation For Menu Button 5 */
+
+
+/* ===================== End Syle Menu-5 ===================== */
 
 
 /* ===================== For Tablet Screen ===================== */
