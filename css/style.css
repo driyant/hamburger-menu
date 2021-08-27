@@ -75,7 +75,7 @@ h1 {
 .hamburger__wrapper .menu__1 .menu__btn__1 span {
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
@@ -85,7 +85,7 @@ h1 {
     position: absolute;
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transform: translateY(-7px);
     transition: all 1s ease-in-out;
 }
@@ -95,7 +95,7 @@ h1 {
     position: absolute;
     background-color: black;
     width: 1.5rem;
-    height: 1px;
+    height: 3px;
     transform: translateY(7px);
     transition: all 1s ease-in-out;
 }
@@ -438,7 +438,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 50px;
     width: 50px;
     margin-top: 1rem;
@@ -453,15 +453,17 @@ h1 {
     width: 50px;
     opacity: 0;
     cursor: pointer;
+    z-index: 2;
 }
 
 .hamburger__wrapper .menu__6 .menu__btn__6 span {
     display: block;
     background-color: black;
-    height: 1px;
+    height: 3px;
     width: 1.5rem;
     margin: 3px 0;
-    transition: 1s ease-in;
+    transition: all 0.875s ease-in-out;
+    border-radius: 12px;
 }
 
 
@@ -470,10 +472,17 @@ h1 {
 
 /* Animation For Menu Button 6 */
 
-
-/* .hamburger__wrapper .menu__6 .menu__btn__6 input:checked~span:nth-child(3) {
+.hamburger__wrapper .menu__6 .menu__btn__6 input:checked~span:nth-child(3) {
     transform: translateX(41px) scaleX(0);
-} */
+}
+
+.hamburger__wrapper .menu__6 .menu__btn__6 input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(1px, 0px);
+}
+
+.hamburger__wrapper .menu__6 .menu__btn__6 input:checked~span:nth-child(4) {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
 
 
 /* End Animation For Menu Button 6 */
